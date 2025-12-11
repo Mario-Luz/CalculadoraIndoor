@@ -1,0 +1,27 @@
+{
+  "name": "grower",
+  "version": "1.0.0",
+  "description": "Calculadora de Plano de Cultivo - Aplicação Fullstack",
+  "main": "index.js",
+  "scripts": {
+    "backend:install": "cd backend && npm install",
+    "backend:build": "cd backend && npm run build",
+    "backend:start": "cd backend && npm start",
+    "backend:dev": "cd backend && npm run dev",
+    "backend:test": "cd backend && npm test",
+    "frontend:install": "cd frontend && npm install",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:preview": "cd frontend && npm run preview",
+    "install:all": "npm run backend:install && npm run frontend:install",
+    "dev": "npm run backend:dev",
+    "dev:all": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "build:all": "npm run backend:build && npm run frontend:build"
+  },
+  "keywords": ["cultivo", "plano", "fullstack"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
