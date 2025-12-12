@@ -1,7 +1,9 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
+// Configuração para publicar no GitHub Pages
 export default defineConfig({
   plugins: [react()],
-})
+  // O "base" precisa ser o nome do repositório
+  base: '/CalculadoraIndoor/', 
+});
